@@ -1,0 +1,40 @@
+컵셉 - 3Tier 구조의 MemberJoin
+
+스토리보드
+
+1. 초기화면 -> "명령어를 입력하세요"
+
+2. 유효한 명령어 : new, list, modify, del, info, search, ver, help, exit
+
+    2-1. 유효하지 않은 명령어 입력시 -> "잘못된 명령어 입니다. 아래의 명령어 사용법을 확인하세요"
+            명령어 사용법:
+            회원등록 – new 아이디 이름 이메일 연락처 비번 비번확인
+            정보수정 – modify 아이디 이름 이메일 연락처 비번 변경비번
+            회원삭제 – del 아이디
+            회원목록 – list
+            회원정보 – info 아이디
+            회원찾기 – search 이름
+            버전확인 – ver
+            도움말 - help
+            종료 – exit
+                                
+    2-2. 정상적으로 명령어 입력시(new) -> "등록했습니다."
+
+            new micol 마이콜 micol@naver.com 010-5487-9632 1234 1234
+            new duly 둘리 duly@naver.com 010-1234-9562 1234 1234
+            new hani 하니 hani@naver.com 010-3456-7458 1234 1234
+            new abc 하니 abc@naver.com 010-2122-1111 1234 1234
+            
+            modify duly 돌리 doly@daum.net 017 1234 5678
+    
+    2-3. list 
+            1. 아이디:1, 이메일:hani@naver.com, 등록일:2023-10-26
+            2. 아이디:0, 이메일:duly@naver.com, 등록일:2023-10-26
+    
+    2-4. info 이메일
+            회원정보 - 아이디:1, 이메일:hani@naver.com, 이름:하니, 암호:5678, 등록일:2023-10-26
+    
+    2-5. exit -> "프로그램을 종료합니다."     
+                        
+    2-6. 암호변경중 이전암호와 변경암호가 일치하지 않는 경우(modify) -> "입력한 암호가 일치하지 않습니다." 
+            change duly@naver.com 1234 0000
